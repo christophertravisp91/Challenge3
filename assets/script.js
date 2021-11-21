@@ -1,5 +1,5 @@
 // Assignment code here
-function generatePassword() {
+function generatePassword(length, lower, upper, number, symbol) {
 
 // prompt for Length
 
@@ -7,7 +7,7 @@ function Length() {
   let answer = prompt("How many characters in your password?", "8 Characters - 128 Characters");
 return answer;
 }
-const lenghAnswer = Length();
+const lengthAnswer = Length();
 
 // prompt for Cases and styles
 
@@ -75,3 +75,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+  const length = LengthAnswer.value;
+
+  console.log (length);
