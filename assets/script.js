@@ -5,25 +5,35 @@ function generatePassword() {
 
 function Length() {
   let answer = prompt("How many characters in your password?", "8 Characters - 128 Characters");
+return answer;
 }
+const lenghAnswer = Length();
 
 // prompt for Cases and styles
 
 function lower() {
   let answer = confirm("Would you like to include lowercase letters?");
+  return answer;
 }
+const lowerAnswer = lower();
 
 function upper() {
   let answer = confirm("Would you like to include uppercase letters?");
+  return answer;
 }
+const upperAnswer = upper();
 
 function number() {
   let answer = confirm("Would you like to include numbers?");
+  return answer;
 }
+const numberAnswer = number();
 
 function symbol() {
   let answer = confirm("Would you like to include special symbols?");
+  return answer;
 }
+const symbolAnswer = symbol();
 
   const randomFunction = {
     lower: getRandomLower,
